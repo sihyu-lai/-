@@ -1,0 +1,242 @@
+/* CSS Reset START */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+*,*::before,*::after {
+    box-sizing: border-box;
+}
+/* CSS Reset END */
+body{
+	font-size: 24px;
+	font-style:italic;
+	
+}
+.banner{
+	
+	height: 958px;
+	background: url(../img/banner.png) no-repeat;
+	background-size: auto;
+	display: flex;
+	align-items: center;
+	justify-content: center; 
+	background-position: center center;
+
+}
+h2{
+	margin-left: 60px; 
+} 
+h2,p{
+	color: #fff;
+	padding-bottom:32px ;
+	margin-left: 60px; 
+	
+}
+.subtitle{
+	font-size: 94px;
+	font-weight: bold;
+}
+.banner .container ul{
+	display: flex;
+	margin-left: 60px; 
+ 
+}
+
+.banner .container ul li{
+	 padding-right: 16px;
+	 
+}
+/* .intro{
+
+} */
+.intro .container{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+.subtitle-b{
+	color: #000;
+	padding-top: 64px;
+	font-size: 64px;
+	font-weight: bold;
+	padding-right: 40px;
+}
+.intro .container img{
+	display: block;
+}
+.intro-text-be,.intro-text-af{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	line-height: 1.5;
+	font-weight: bold;
+	padding-top: 24px;
+	padding-bottom: 56px;
+}
+.last-text{
+	padding-bottom: 24px;
+	border-bottom: 1px solid #000;
+}
+.intro-text-af li:before{
+	content:'•';
+	color:#891818 ;
+	font-size:22px;
+	padding-right: 5px;
+}
+.work{
+	background-color: #000;
+}
+.work .container{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-content: center;
+}
+.work .container h2{
+	 padding-top: 64px;
+	 font-size: 64px;
+	 text-align: center;
+}
+.work .container p{
+	text-align: center;
+	
+}
+.workimgone{
+	padding-top: 68px;
+}
+.workimgone,.workimgtwo{
+	padding-bottom: 40px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	 
+}
+.workimgtwo li{
+	margin-right: 24px;
+	padding-bottom: 60px;
+}
+.otherworks .container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding-top: 64px;
+}
+.otherworks .container h2,.otherworks .container p{
+	color: #000;
+}
+.otherworks .container h2{
+	font-size: 64px;
+	font-weight: bold;
+}
+ .poster{
+	 display: flex;
+	align-items: center;
+	justify-content: center;
+	}
+.poster li{
+	margin-right: 24px;
+
+}
+.poster li a{
+	text-decoration: none;
+	font-style: normal;
+	
+	}
+.poster li a img{
+	display: block;
+}
+.poster li a p{
+	padding-top: 16px;
+	text-align: center;
+	margin-right: 24px;
+	padding-bottom: 56px;
+}
+.photograph{
+	display: flex;
+ 
+}
+.photograph li,.creation li{
+	margin-right: 24px;
+	
+}
+.photograph li a,.creation li a{
+	text-decoration: none;
+	font-style: normal;
+
+}
+.photograph li img,.creation li img{
+	display: block;
+}
+.photograph li p,.creation li p{
+	padding-top: 16px;
+	text-align: center;
+	margin-right: 24px;
+}
+.creation{
+	padding-top: 56px;
+	display: flex;
+	padding-bottom: 160px;
+}
+.contact{
+	padding-top: 64px;
+	background-color: #000;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	padding-bottom: 80px;
+}
+.contact h2{
+	font-size: 64px;
+}
+.contact a{
+	text-decoration: none;
+	color: #fff;
+}
