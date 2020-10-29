@@ -52,7 +52,7 @@ table {
     box-sizing: border-box;
 }
 /* CSS Reset END */
-
+ 
 .container{
 	max-width: 1200px;
 	margin: 0 auto;
@@ -107,7 +107,7 @@ h2{
 }
 .bg-white{
 	background-color: #fff;
-	width: 1200px;
+	
 }
 .pt-34{
 	padding-top: 34px;
@@ -117,12 +117,13 @@ h2{
 	color: #fff;
 }
 .inner-container{
-	max-width: 1200px;
+	 
 	margin: 0 auto;
 	border-left: 1px solid #fff;
 	text-align: left;
 	padding-left: 10px;
-	margin-left: 650px;
+	
+	margin-left: 700px;
 	margin-top: 28px;
 	line-height: 2;
 }
