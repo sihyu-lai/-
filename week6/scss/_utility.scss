@@ -24,7 +24,7 @@
     color: $fz-color-primary;
 }
 .fz-color-thr{
-    color: $fz-color-thr;
+    color: $fz-color-thr !important;
 }
 .fz-color-fth {
     color:  $fz-color-fth ;
@@ -80,6 +80,10 @@ img{
 
 .object-fit_contain { 
     object-fit: contain; 
+}
+.img-h-change{
+    max-width: 100%;
+    height: 60vh;
 }
 //連結顏色
 .alink{
@@ -184,4 +188,19 @@ img{
 
 .container-md{
     max-width: 100% !important;
+}
+.z-indexhigh{
+    z-index: 9;
+}
+
+
+footer .navbar-nav a, footer .nav-link  a{
+    color: $fz-color-thr !important;
+}
+
+.z-indexhigh{
+    z-index: 9;
+}
+footer a.nav-link.alink.fz-color-thr {
+    color: #fff !important;
 }
