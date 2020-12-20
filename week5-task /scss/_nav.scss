@@ -1,0 +1,65 @@
+.nav{
+
+
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    height: 100%;
+}
+.nav-primary{
+    background-color: $blue;
+    width: 20%;
+}
+.nav-ul{
+    font-size: $fz-primary;
+    li{
+        padding-top: 24px;
+    }
+    a{
+        color: $text-primary;
+        font-weight: bold;
+    }
+  
+}
+.administrator{
+    position: fixed;
+    bottom:5%;
+    left:3%;
+    
+}
+
+.author-img {
+    width: 40px;
+
+} 
+.content,.content-select,.left-content,.right-content{
+  position: absolute;
+  left:25%;
+  right:2%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.content-select{
+    top:10%;
+}
+.comment a{  
+    color: $gray;
+}
+.left-content,.right-content{
+    top:20%;
+}
+.text-sec{
+    color: $gray;
+}
+.right-content{
+    left:55%;
+    right:0;
+    max-width:100%;
+}
+.btn-sec{
+    
+    background-color: $card-color;
+    width: 30% !important;
+}

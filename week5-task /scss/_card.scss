@@ -1,0 +1,51 @@
+ .left-content-inner{
+     border: 1px solid $card-color;
+    width: 40% !important;
+    li{
+        &:hover{
+            background-color: $card-color;
+            color: $white;
+            text-decoration: none !important;
+        }
+    }
+    a {
+        
+        display: block;
+        width: 100%;
+        &:hover{
+            
+            color: $white;
+            text-decoration: none !important;
+        }
+    }
+    
+ }
+ .right-content {
+   
+     .card{
+        width: 95%;
+        border: 1px solid $card-color;
+      .card-header{
+        background-color: $card-color;
+      }
+     }
+ }
+
+.media{
+    img{
+        width: 40px;
+        height: 40px;
+    }
+}
+.hightline-txt{
+    background-color:  $card-color;
+    color:$green;
+    padding-right: 1px;
+    padding-left:1px;
+    padding-top:1px;
+    padding-bottom:1px;
+}
+.media-body li{
+    list-style-type: disc;
+    color:$black;
+}

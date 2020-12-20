@@ -1,0 +1,187 @@
+@import"variable.scss";
+@import"mixin.scss";
+
+//字型大小
+.fz-pri{
+ font-size: $fz-primary;
+}
+.fz-sec{
+    font-size: $fz-sec;
+}
+.fz-thr{
+    font-size: $fz-thr;
+}
+
+.fz-fth{
+    font-size: $fz-fth;
+}
+.fz-six{
+    font-size: $fz-six;
+}
+
+//字型顏色
+.fz-color-pri{
+    color: $fz-color-primary;
+}
+.fz-color-thr{
+    color: $fz-color-thr;
+}
+.fz-color-fth {
+    color:  $fz-color-fth ;
+}
+
+
+
+
+// 按鈕
+.btn-primary{
+    background-color: rgba(0,0,0,0);
+    border-radius: 5em;
+    border: 1px solid $fz-color-thr;
+    font-size: $fz-sec;
+    &:hover{
+        background-color: $fz-color-fth;
+        border-color: $fz-color-fth;
+        box-shadow: $fz-color-fth;
+    }
+}
+.btn-sec{
+    color: $fz-color-sec;
+    background-color: rgba(0,0,0,0);
+    border-radius: 5em;
+    border: 1px solid $fz-color-sec;
+    font-size:$fz-sec;
+
+    &:hover{
+        background-color: $fz-color-fth;
+        border-color: $fz-color-fth;
+        box-shadow: $fz-color-fth;
+    }
+}
+.btn-outline-secondary{
+    background-color:$fz-color-fth !important;
+        color: $fz-color-fth !important;
+}
+//背景顏色
+.bg-primary{
+    background-color: $bgc-primary !important;
+}
+.bg-fth{
+    background-color: $fz-color-fth ;
+}
+.bg-six{
+    background-color: $fz-color-six;
+}
+// 圖片高度
+img{
+    display: block;
+    max-width: 100%;
+}
+
+.object-fit_contain { 
+    object-fit: contain; 
+}
+//連結顏色
+.alink{
+    color: $fz-color-thr;
+}
+//編筐
+.border-fth{
+   border: 2px solid $fz-color-fth;
+}
+//圖片高度不一
+.object-fill{
+    object-fit: fill;
+}
+//刪除線
+.texdedlt{
+    text-decoration: line-through;
+
+}
+.dflex{
+    display: flex;
+}
+//各裝置出現消失
+.mobile-dis{
+    @include mobile(){
+        display: none!important; 
+    }
+}
+.mobile-app{
+    @include mobile(){
+        display: inline-block!important; 
+
+    }
+}
+.m-disappear{
+    display: none!important;
+  
+}
+.m-appear{
+    display: flex!important;
+    flex-wrap: nowrap;
+}
+.pad-appear{
+            @include pad(){
+                // pad768px以上出現
+                
+                display:inline-block!important;
+            
+ }
+}
+.pad-disappear{
+    @include pad(){
+        // 在pad768px以上消失
+
+        display:none!important;
+
+}
+}
+
+.pc-appear{
+    //992
+    @include desktop(){
+        display: inline-block;}
+    }
+.pc-disappear{
+    @include desktop(){
+        display: none;
+    }
+}
+ 
+
+.border-btn{
+    color:$fz-color-fth !important;
+    border-color: $fz-color-thr !important;
+}
+
+.navbar-nav .nav-link{
+    color: $fz-color-thr !important;
+    @include pad(){
+        color: $fz-color-thr!important;
+    }
+    @include desktop(){
+         color: $fz-color-six!important;
+    }
+}
+.ml-xs-31{
+    margin-left: 31%;
+}
+.ml-sm-55{
+    @include mobile(){
+        margin-left: 55%;
+    }
+}
+
+//底線
+.border_bottom{
+
+    border-bottom: 1px solid $fz-color-thr ;
+}
+.border_top{
+    border-top: 1px solid $fz-color-thr ;
+}
+
+.container-md{
+    max-width: 100% !important;
+}

@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>第五週主線任務</title>
+    <!-- 載入BS4 -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/all.min.css">
+</head>
+<body>
+    <div class="d-flex">
+        <div class="nav nav-primary pl-3">
+            <h1 class="mt-3 "><a href="#"><img src="img/logo-ANSWER.svg" alt=""></a></h1>
+            <ul class="nav-ul">
+                <li>
+                    <a href="#">
+                        <span class="iconify" data-icon="ant-design:bar-chart-outlined" data-inline="false"></span>
+                        <span class="pl-3">  Dashboard</span>
+                   </a>
+            
+                </li>
+                <li><a href="#"><span class="iconify" data-icon="el-comment-alt" data-inline="false"></span><span class="pl-3">Question</span></a></li>
+                <li><a href="#"><span class="iconify" data-icon="si-glyph:document-rss" data-inline="false"></span><span class="pl-3">Assignment</span></a></li>
+                <li><a href="#"><span class="iconify" data-icon="ic:baseline-video-library" data-inline="false"></span><span class="pl-3">Course</span></a></li>
+                <li><a href="#"><span class="iconify" data-icon="bi:people-fill" data-inline="false"></span><span class="pl-3">Admin</span></a></li>
+                <li><a href="#"><span class="iconify" data-icon="clarity:settings-solid" data-inline="false"></span><span class="pl-3">Settings</span></a></li>
+            </ul>
+            <div class="administrator d-flex flex-row">
+                <div class="author-img pr-1">
+                    <img src="img/andychen.jpeg" alt="" class="rounded-circle">
+                </div>
+                <div class="d-flex flex-column">
+                    <span class="font-weight-bold">Andy Chen</span>
+                    <span class="text-secondary ">andy0401@mail.com</span>
+                </div>
+               
+            </div>
+        </div>
+        <div class="content-pri">
+        <div class="content mr-auto ">
+            <div class="topside-left mt-3 d-flex">
+                <h2>Assginment</h2>
+                <button type="button" class="btn   dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    All Courses
+                </button>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                    <a class="dropdown-item" href="#">HTML,CSS</a>
+                    <a class="dropdown-item" href="#">JavaScript</a>
+                    <a class="dropdown-item" href="#">Vue</a>
+                  </div>
+            </div>
+            <div class="topside-right d-flex">
+                <button><span class="iconify" data-icon="bx:bx-search" data-inline="false"></span></button>
+                <button><span class="iconify" data-icon="mdi:bell-ring" data-inline="false"></span></button>
+            </div>
+        </div>
+     <div class="content-select d-flex">
+         <div class="catagory">
+            <div class="dropdown">
+                <button class="btn btn-secondary dropdown-toggle btn-clear" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  All(4)
+                </button>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                  <a class="dropdown-item" href="#">Chapter Assignment 1</a>
+                  <a class="dropdown-item" href="#">Chapter Assignment 2</a>
+                  <a class="dropdown-item" href="#">Final Assignment </a>
+                </div>
+              </div>
+         </div>
+         <div class="comment"><a href="#">2 comments</a></div>
+         
+     </div>
+     <div class="left-content ">
+        <div class="card left-content-inner"  >
+           
+            <ul class="list-group list-group-flush ">
+              <li class="list-group-item d-flex">
+                  <a href="#">
+                      <div class="d-flex">
+                          <span class="mr-auto">Chapter Assignment 2</span>
+                          <span class="font-weight-bold" >4 hrs ago</span>
+                        </div>
+                      <div class="d-flex">
+                          <span class="mr-auto font-weight-bold">Please check this file…</span>
+                          <span class="text-sec">Emily Wang</span>
+                      </div>
+                  </a>
+              </li>
+              <li class="list-group-item d-flex">
+                <a href="#">
+                    <div class="d-flex">
+                        <span class="mr-auto ">Chapter Assignment 1</span>
+                        <span class="font-weight-bold">12 hrs ago</span>
+                      </div>
+                    <div class="d-flex">
+                        <span class="mr-auto font-weight-bold">My Homework</span>
+                        <span class="text-sec">David Xu</span>
+                    </div>
+                </a>
+              </li>
+              <li class="list-group-item d-flex">
+                <a href="#">
+                    <div class="d-flex">
+                        <span class="mr-auto">Final Assignment</span>
+                        <span class="font-weight-bold">18 hrs ago</span>
+                      </div>
+                    <div class="d-flex">
+                        <span class="mr-auto font-weight-bold">Have a problem with this…</span>
+                        <span class="text-sec" >Tony Wei</span>
+                    </div>
+                </a>
+              </li>
+              <li class="list-group-item d-flex">
+                <a href="#">
+                    <div class="d-flex">
+                        <span class="mr-auto" >Final Assignment</span>
+                        <span class="font-weight-bold">19 hrs ago</span>
+                      </div>
+                    <div class="d-flex"> 
+                        <span class="mr-auto font-weight-bold"> Did I do it right?</span>
+                        <span class="text-sec">Christina Lin</span>
+                    </div>
+                </a>
+              </li>
+            </ul>
+          </div>
+     </div>
+     <div class="right-content d-flex flex-column">
+        <div class="card">
+            <div class="card-header d-flex justify-content-between">
+                <div class="text">
+                <h4>Chapter Assignment 2 / HTML&CSS</h4>
+                <h5>Please check this file for me, thanks! </h5>
+                </div>
+                <span class="iconify mt-3 font-weight-bold" data-icon="eva:more-vertical-fill" data-inline="false"></span>
+            </div>
+    
+            <div class="card-body">
+                <div class="media text-main d-flex flex-column ">
+                    <div class="commenter  d-flex flex-wrap">
+                    <img src="img/emilywang.jpeg" class="align-self-start mr-3 rounded-circle" alt="...">
+                    <div class="data">
+                    <span class="fz-primary">Emily Wang</span>
+                    <p class="fz-third">10:38 AM (4 hours ago)</p>
+                </div>
+                </div>
+                    <div class="media-body fz-fourth d-flex flex-column">
+                    
+                     <p class="ml-5 mt-1">Hi Teacher, the attached file is my homework of chapter 2. And here comes a question: Why in the following code the height of the <span class="hightline-txt">div </span> is bigger than the height of the <span class="hightline-txt">img</span>  ? There is a gap below the image, but it doesn’t seems to be a padding/margin. What is the gap or extra space below image?</p>
+                    <button class="btn-sec ml-5 pt-1 pb-2"><span class="iconify" data-icon="bi:paperclip" data-inline="false"></span>HW-2-David.zip</button>
+                    
+                
+                  </div>
+                  <div class="line mr-auto mt-3 ml-5"></div>
+                  <div class="media text-main mt-2 d-flex justify-content-between w-100 ">
+                      <div class="responsor d-flex " >
+                        <img src="img/andychen.jpeg" class="align-self-start mr-3 rounded-circle" alt="...">
+                        <div class="data ">
+                            <span class="fz-primary">Emily Wang</span>
+                            <p  class="fz-third">13:24 AM (1 hours ago)
+                                </p>
+                        </div>
+                        
+                       
+                      </div>
+                      <div class="edit">
+                        <div class="iconify" data-icon="ant-design:star-outlined" data-inline="false"></div>
+                        <div class="iconify" data-icon="clarity:edit-solid" data-inline="false"></div>
+                    </div>
+                    </div>
+                   
+
+                    <div class="media-body pl-5">
+                     <p>Hi David, by default, an image is rendered inline, like a letter so it sits on the same line that a, b, c and d sit on. There is space below that line for the descenders you find on letters like g, j, p and q.</p>
+                     <ul>
+                         <h5 class="pb-1">You can:</h3>
+                         <li>adjust the <span class="hightline-txt">vertical-align </span>of the image to position it elsewhere (e.g. the<span class="hightline-txt">middle</span> )</li>
+                         <li>change the <span class="hightline-txt">display </span>so it isn’t inline.</li>
+                     </ul>
+                    </div>
+                  </div>
+             
+            </div>
+          </div>
+       
+              <!-- start -->
+      <div class="footer d-flex justify-content-between ">
+        <div class="arrow mt-3">
+            <button class="iconify fz-secondary" data-icon="eva:arrow-ios-back-outline" data-inline="false"></button>
+            <button class="iconify fz-secondary" data-icon="eva:arrow-ios-forward-fill" data-inline="false"></button>
+        </div>
+        <div class="btn-footer d-flex mt-3">
+            <button class="btn-pri font-weight-bold pr-1 ml-1 mr-2 mb-2">Mark as read</button>
+            <button class="btn-tr font-weight-bold pr-3 pl-3 mb-2">Reply</button>
+        </div>
+     </div>
+      <!-- end -->
+       
+       
+       
+       
+        </div>
+  
+     </div>
+
+      <!-- start -->
+      <!-- <div class="footer">
+        <div class="arrow">
+            <span class="iconify" data-icon="ant-design:arrow-right-outlined" data-inline="false"></span>
+            <span class="iconify" data-icon="ant-design:arrow-left-outlined" data-inline="false"></span>
+        </div>
+        <div class="btn">
+            <button>Mark as read</button>
+            <button>Reply</button>
+        </div>
+     </div> -->
+      <!-- end -->
+   
+   
+   
+    </div>
+   
+
+    <!-- 載入BS4 -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+    <!-- icon-->
+<script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
+</body>
+</html>

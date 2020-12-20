@@ -1,0 +1,49 @@
+ 
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+a {
+    color: $text-primary;
+    text-decoration: none;
+   
+}
+
+.text-secondary{
+    color: $text-secondary;
+}
+h2{
+    font-size: $fz-secondary  ;
+    color: $text-primary   ;
+   
+}
+button{
+    background-color: $white;
+    border:0;
+    display: block;
+}
+.btn-clear{
+    background-color: $white;
+    color: $text-primary;
+    border: 0;
+    
+}
+h4{
+    font-size: $fz-third  ;
+}
+h5{
+    font-size:$fz-primary ;
+}
+.line{
+    width: 90%;
+    height: 2px;
+    background-color: $card-color;
+}
