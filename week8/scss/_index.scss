@@ -1,0 +1,16 @@
+h1.logo {
+    margin-top: 1rem;
+}
+
+.menu-btn{
+    @include pad(){
+        display: none;
+
+    }
+}
+.menu-dropdown{
+    @include pad(){
+        display: inline-block;
+
+    }
+}

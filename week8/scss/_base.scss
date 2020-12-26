@@ -1,3 +1,5 @@
+@import"variable.scss";
+@import"mixin.scss";
 .logo{
     background:url('../img/logo-aloha.svg');
     text-indent:101%; /*首行縮排*/
@@ -9,11 +11,27 @@
 }
 
 a{
-    text-decoration: none;
+  
     background-color: transparent;
     display: block;
+    color: $black;
+    &:hover{
+        text-decoration: none;
+    }
 }
 
-.navbar-light, .navbar-toggler {
-    border-color:#fff;
+
+.order--2{
+    order:-2;
+    @include pad(){
+        order:-2;
+    }
+    @include desktop(){
+        order:1;
+    }
+}
+
+.navbar-light .navbar-toggler {
+    color: $white; 
+    border-color:$white; 
 }
