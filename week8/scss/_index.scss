@@ -1,16 +1,41 @@
 h1.logo {
     margin-top: 1rem;
-}
-
-.menu-btn{
+    @include mobile(){
+        order: 1 !important;
+  
+    }
     @include pad(){
-        display: none;
-
+        order: -2 !important;
+  
     }
 }
-.menu-dropdown{
-    // @include pad(){
-    //     display: inline-block;
 
-    // }
-}
+div#navbarNavDropdown{
+    @include mobile(){
+        display: flex !important;
+        justify-content: flex-end !important;
+
+    }
+     @include pad(){
+         display: flex !important;
+         justify-content: flex-end !important;
+
+     }
+ }
+ .h-50{
+    @include pad(){
+        height: 50vh !important;
+    }
+     @include desktop(){
+         max-height:  50vh!important;
+     }
+ }
+ .banner{
+     position: relative;
+     &-inner h2{
+        position: absolute;
+        top:40%;
+        left:25%;
+}   
+    }
+
