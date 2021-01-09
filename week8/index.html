@@ -6,6 +6,8 @@
     <title>第8週＿旅遊網</title>
     <!-- 載入BS4 -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+   <!--載入月曆套件-->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css" />
     <link rel="stylesheet" href="css/all.min.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="js/all.js"></script>
@@ -48,14 +50,14 @@
       <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
         <div class="carousel-inner">
           <div class="carousel-item active banner-inner">
-            <img src="img/index-banner.jpg" class="d-block w-100  h-50" alt="...">
-            <h2 class=" text-light  font-weight-bold fz-sec">Discover <br>your ideal hotel</h2>
+            <img src="img/index-banner.jpg" class="d-block w-100  h-50 object-fit-cover" alt="...">
+            <h2 class=" text-light  font-weight-bold fz-sec">Discover your ideal hotel</h2>
           </div>
           <div class="carousel-item ">
-            <img src="img/index-banner.jpg" class="d-block w-100  h-50" alt="...">
+            <img src="img/index-banner.jpg" class="d-block w-100  h-50 object-fit-cover" alt="...">
           </div>
           <div class="carousel-item  ">
-            <img src="img/index-banner.jpg" class="d-block w-100  h-50" alt="...">
+            <img src="img/index-banner.jpg" class="d-block w-100  h-50 object-fit-cover" alt="...">
           </div>
         </div>
         <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-bs-slide="prev">
@@ -68,8 +70,69 @@
         </a>
 
          <!-- 搜尋開始 -->
-      <div class="card z-index-cus pos-cus w-90 ">
+      <div class="card z-index-cus pos-cus w-90  search-section">
         <div class="card-body bg-pri ">
+            <!-- Large button groups (default and split) -->
+<div class="btn-group index-drop ">
+	<button class="btn btn-light btn-lg dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+		<span class="iconify" data-icon="fa-solid:map-marker-alt" data-inline="false"></span> Destination
+	</button>
+	<ul class="dropdown-menu">
+		<li>
+			<a href="#"><span class="iconify" data-icon="ant-design:star-filled" data-inline="false"></span>Bangkok<p>Thailand</p></a>
+		</li>
+		<li><a href="#"><span class="iconify" data-icon="ant-design:star-filled" data-inline="false"></span>Osaka<p>Japan</p></a></li>
+		<li><a href="#"><span class="iconify" data-icon="ant-design:star-filled" data-inline="false"></span>Roma<p>Italy</p></a></li>
+		<li><a href="#"><span class="iconify" data-icon="ant-design:star-filled" data-inline="false"></span>Paris<p>London</p></a></li>
+		<li><a href="#"><span class="iconify" data-icon="ant-design:star-filled" data-inline="false"></span>Reykjavik<p>Iceland</p></a></li>
+	</ul>
+</div>
+
+<!-- SEC -->
+<button type="button" class="btn btn-light btn-lg" name="datetimes"><span class="iconify" data-icon="bx:bx-calendar" data-inline="false"></span>Check-in/Check-out</button>
+
+<!--  thr-->
+<div class="btn-group">
+	<button type="button" class="btn btn-light dropdown-toggle btn-lg" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+		<span class="iconify" data-icon="bi:person-fill" data-inline="false"></span>Guest
+	</button>
+	<ul class="dropdown-menu dropdown-menu-right">
+		<li class="mb-2">
+
+			<span class="list-flex ">
+				<span class="pt-1 pl-2 pr-4 ">Adult&ensp;
+				</span>
+				<button class="dropdown-item  mr-0" type="button"><span class="iconify" data-icon="el:minus" data-inline="false"></span></button>
+				<input type="text" class="size">
+				<button class="dropdown-item  " type="button"><span class="iconify" data-icon="bx:bx-plus-medical" data-inline="false"></span></button>
+			</span>
+		</li>
+		<li class="mb-2">
+
+			<span class="list-flex ">
+				<span class="pt-1 pl-2 pr-4 ">Child&ensp;
+				</span>
+				<button class="dropdown-item  mr-0" type="button"><span class="iconify" data-icon="el:minus" data-inline="false"></span></button>
+				<input type="text" class="size">
+				<button class="dropdown-item  " type="button"><span class="iconify" data-icon="bx:bx-plus-medical" data-inline="false"></span></button>
+			</span>
+		</li>
+		<li class="mb-2">
+
+			<span class="list-flex ">
+				<span class="pt-1 pl-2 px-middle">Room&ensp;
+
+				</span>
+				<button class="dropdown-item  mr-0" type="button"><span class="iconify" data-icon="el:minus" data-inline="false"></span></button>
+				<input type="text" class="size">
+				<button class="dropdown-item  " type="button"><span class="iconify" data-icon="bx:bx-plus-medical" data-inline="false"></span></button>
+			</span>
+		</li>
+
+	</ul>
+</div>
+<!-- search -->
+<button type="button" class="btn btn-secondary btn-lg search">Search</button>
 
           </div>
       </div>
@@ -95,5 +158,9 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
     <!-- icon-->
     <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
+    <!-- 月曆套件 -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/jquery/latest/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"></script>
 </body>
 </html>

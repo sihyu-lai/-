@@ -39,3 +39,46 @@ div#navbarNavDropdown{
 }   
     }
 
+.banner-inner h2{
+    line-height: 1.5;
+}
+a {
+	text-decoration: none !important;
+	color: #000;
+}
+.index-drop li {
+	padding: 0 0% 5% 5%;
+
+	p {
+		color: #00000099;
+		font-size: 12px;
+	}
+}
+.list-flex {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	max-width: 50%;
+}
+.size {
+	margin-left: 8%;
+	max-width: 2vw !important;
+	height: 10vh;
+	margin-right: 8%;
+}
+.dropdown-item {
+	padding: 0;
+}
+.dropdown-menu.show {
+	display: block;
+	width: 60%;
+}
+.px-middle {
+	padding-right: 23%;
+}
+.search-section{
+    display: flex;
+}
+.search{
+    background-color: $sec-color !important;
+}
