@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>第8週＿旅遊網</title>
+    <!-- 載入BS4 -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+   <!--載入月曆套件-->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css" />
+    <link rel="stylesheet" href="css/all.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="js/all.js"></script>
+</head>
+<body>
+    <header>
+      <!-- 主選單  開始-->
+      <nav class="navbar navbar-expand-sm navbar-light  d-flex    flex-row-reverse flex-md-row justify-content-md-between justify-content-md-between">
+        <h1 class="logo">  <a class="navbar-brand logo" href="#">ALOHA</a></h1>
+       
+        <button class="navbar-toggler  " type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse width-control" id="navbarNavDropdown">
+          <ul class="navbar-nav menu-dropdown">
+            
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <span class="iconify" data-icon="ant-design:global-outlined" data-inline="false"></span>
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                <a class="dropdown-item" href="#">English</a>
+                <a class="dropdown-item" href="#">Taiwanese</a>
+                <a class="dropdown-item" href="#">Japanese</a>
+              </div>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link" href="#">Sign up</a>
+            </li>
+         
+          </ul>
+        </div>
+      <div class="login order--2"><a href="#">Login</a></div>
+    
+      </nav>
+      <!--主選單 結束-->
+    </header>
+    <div class="banner">
+      <!-- 輪播圖片 開始 -->
+      <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active banner-inner">
+            <img src="img/index-banner.jpg" class="d-block w-100  h-50 object-fit-cover" alt="...">
+            <h2 class=" text-light  font-weight-bold fz-sec">Discover your ideal hotel</h2>
+          </div>
+          <div class="carousel-item ">
+            <img src="img/index-banner.jpg" class="d-block w-100  h-50 object-fit-cover" alt="...">
+          </div>
+          <div class="carousel-item  ">
+            <img src="img/index-banner.jpg" class="d-block w-100  h-50 object-fit-cover" alt="...">
+          </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden"></span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden"></span>
+        </a>
+
+         <!-- 搜尋開始 -->
+      <div class="card z-index-cus pos-cus w-90  search-section">
+        <div class="card-body bg-pri ">
+            <!-- Large button groups (default and split) -->
+<div class="btn-group index-drop ">
+	<button class="btn btn-light btn-lg dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+		<span class="iconify" data-icon="fa-solid:map-marker-alt" data-inline="false"></span> Destination
+	</button>
+	<ul class="dropdown-menu">
+		<li>
+			<a href="#"><span class="iconify" data-icon="ant-design:star-filled" data-inline="false"></span>Bangkok<p>Thailand</p></a>
+		</li>
+		<li><a href="#"><span class="iconify" data-icon="ant-design:star-filled" data-inline="false"></span>Osaka<p>Japan</p></a></li>
+		<li><a href="#"><span class="iconify" data-icon="ant-design:star-filled" data-inline="false"></span>Roma<p>Italy</p></a></li>
+		<li><a href="#"><span class="iconify" data-icon="ant-design:star-filled" data-inline="false"></span>Paris<p>London</p></a></li>
+		<li><a href="#"><span class="iconify" data-icon="ant-design:star-filled" data-inline="false"></span>Reykjavik<p>Iceland</p></a></li>
+	</ul>
+</div>
+
+<!-- SEC -->
+<button type="button" class="btn btn-light btn-lg" name="datetimes"><span class="iconify" data-icon="bx:bx-calendar" data-inline="false"></span>Check-in/Check-out</button>
+
+<!--  thr-->
+<div class="btn-group">
+	<button type="button" class="btn btn-light dropdown-toggle btn-lg" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+		<span class="iconify" data-icon="bi:person-fill" data-inline="false"></span>Guest
+	</button>
+	<ul class="dropdown-menu dropdown-menu-right">
+		<li class="mb-2">
+
+			<span class="list-flex ">
+				<span class="pt-1 pl-2 pr-4 ">Adult&ensp;
+				</span>
+				<button class="dropdown-item  mr-0" type="button"><span class="iconify" data-icon="el:minus" data-inline="false"></span></button>
+				<input type="text" class="size">
+				<button class="dropdown-item  " type="button"><span class="iconify" data-icon="bx:bx-plus-medical" data-inline="false"></span></button>
+			</span>
+		</li>
+		<li class="mb-2">
+
+			<span class="list-flex ">
+				<span class="pt-1 pl-2 pr-4 ">Child&ensp;
+				</span>
+				<button class="dropdown-item  mr-0" type="button"><span class="iconify" data-icon="el:minus" data-inline="false"></span></button>
+				<input type="text" class="size">
+				<button class="dropdown-item  " type="button"><span class="iconify" data-icon="bx:bx-plus-medical" data-inline="false"></span></button>
+			</span>
+		</li>
+		<li class="mb-2">
+
+			<span class="list-flex ">
+				<span class="pt-1 pl-2 px-middle">Room&ensp;
+
+				</span>
+				<button class="dropdown-item  mr-0" type="button"><span class="iconify" data-icon="el:minus" data-inline="false"></span></button>
+				<input type="text" class="size">
+				<button class="dropdown-item  " type="button"><span class="iconify" data-icon="bx:bx-plus-medical" data-inline="false"></span></button>
+			</span>
+		</li>
+
+	</ul>
+</div>
+<!-- search -->
+<button type="button" class="btn btn-secondary btn-lg search">Search</button>
+
+          </div>
+      </div>
+      
+      <!-- 搜尋結束 -->
+      </div>
+      <!--輪播圖片 結束-->
+   
+     
+    </div>
+    <main>
+
+    </main>
+    <footer>
+
+    </footer>
+ 
+   
+
+    <!-- 載入BS4 -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+    <!-- icon-->
+    <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
+    <!-- 月曆套件 -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/jquery/latest/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"></script>
+</body>
+</html>

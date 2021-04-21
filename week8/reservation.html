@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>第8週＿旅遊網</title>
+    <!-- 載入BS4 -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+   <!--載入月曆套件-->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css" />
+    <link rel="stylesheet" href="css/all.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="js/all.js"></script>
+</head>
+<body>
+    <header>
+      <!-- 主選單  開始-->
+      <nav class="navbar navbar-expand-sm navbar-light  d-flex    flex-row-reverse flex-md-row justify-content-md-between justify-content-md-between">
+        <h1 class="logo">  <a class="navbar-brand logo" href="#">ALOHA</a></h1>
+       
+        <button class="navbar-toggler  " type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse width-control" id="navbarNavDropdown">
+          <ul class="navbar-nav menu-dropdown">
+            
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <span class="iconify" data-icon="ant-design:global-outlined" data-inline="false"></span>
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                <a class="dropdown-item" href="#">English</a>
+                <a class="dropdown-item" href="#">Taiwanese</a>
+                <a class="dropdown-item" href="#">Japanese</a>
+              </div>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link" href="#">Sign up</a>
+            </li>
+         
+          </ul>
+        </div>
+      <div class="login order--2"><a href="#">Login</a></div>
+    
+      </nav>
+      <!--主選單 結束-->
+    </header>
+   
+   
+    <main>
+        <div class="res-wrap">
+            
+        <h2 class="font-weight-bold fz-pri col-auto mr-auto" >Reservation received!</h2>
+         <hr>   
+         <div class="res-wrap-inner">
+        <p><span class="font-weight-bold col-auto mr-auto
+          " >Guest</span><span class="fz-gray">David Lin</span></p>
+        <div class="res-email"><span class="font-weight-bold col-auto mr-auto">Email</span><span class="fz-gray  ">david0520@mail.com.tw</span><span class="fz-purple  col-auto ml-auto res-text res-text-email-fst">Confirmation email sent to this address</span></div>
+       <p class="res-email-sec fz-purple col-auto mr-auto">Confirmation email sent to this address</p>
+        <p><span class="font-weight-bold col-auto mr-auto">phone</span><span class="fz-gray">+886 9 32 456 789</span></p>
+            <hr>
+            <p><span   class="font-weight-bold col-auto mr-auto">room</span><span>Deluxe Suite with Pool / 2 nights</span></p>
+            <hr>
+            <p><span class="font-weight-bold col-auto mr-auto">check-in</span><span>Wednesday, 17 June 2020</span></p>
+            <p> <span class="font-weight-bold col-auto mr-auto">check-out</span><span>Friday, 19 June 2020</span></p>
+            <hr>
+        </div>
+      </div>
+        <div class="res-btn  ">
+            <button type="button" class="btn fz-purple btn-lg bg-white border-purple">edit reservation</button>
+            <button type="button" class="btn  btn-lg fz-white bg-purple">Homepage</button>
+
+
+        </div>
+    </main>
+    <footer>
+
+    </footer>
+ 
+   
+
+    <!-- 載入BS4 -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+    <!-- icon-->
+    <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
+    <!-- 月曆套件 -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/jquery/latest/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"></script>
+</body>
+</html>

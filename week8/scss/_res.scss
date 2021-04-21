@@ -1,0 +1,38 @@
+@import"variable.scss";
+@import"mixin.scss";
+.res-wrap,.res-btn{
+    max-width: 1110px;
+    margin: 0 auto;
+}
+.res-wrap p{
+    line-height: 1.5;
+}
+.res-btn{
+    display: flex;
+    flex-direction: column;
+    max-width: 90%;
+        button{
+      margin:2% 0 ;
+   }
+ 
+    @include pad(){
+        flex-direction: row;
+        max-width: 50%;
+        margin-right: 0;
+    } 
+    
+}
+.res-text-email-fst{
+    display: none !important;
+    @include pad(){
+        display: inline-block !important;
+    }
+}
+ 
+.res-email-sec{
+    display: inline-block;
+    @include pad(){
+        display: none !important;
+    }
+}
+
