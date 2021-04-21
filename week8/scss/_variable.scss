@@ -1,12 +1,38 @@
 $black:#000;
+$gray:#00000099;
 $white:#fff;
 $pri-color:#F1F0F8;
 $sec-color:#6C51E2;
-
+ $fz-pri:32px;
+ $fz-sec:16px;
 $fz-sec:2.5rem;
 .fz-sec{
-    font-size: $fz-sec;
+    font-size: $fz-sec !important;
 }
 .bg-pri{
     background-color:$pri-color;
+}
+.fz-gray{
+    color:$gray;
+}
+.fz-pri{
+    font-size:$fz-pri ;
+}
+.fz-purple{
+    color:$sec-color;
+}
+.fz-white{
+    color:$white;
+}
+.bg-white{
+    background-color: $white;
+}
+.bg-purple{
+    background-color:$sec-color;
+}
+.border-purple{
+    border: 1px solid $sec-color;
+}
+.fz-sec{
+    font-size:  $fz-sec;
 }

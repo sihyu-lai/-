@@ -41,8 +41,18 @@ a{
 }
 .pos-cus{
     position: absolute;
-    bottom:-10%;
+    bottom:-8%;
     left:5%;
+    @include mobile(){
+        bottom:10%;
+    }
+    @include pad(){
+        bottom:-6%;
+ 
+    }
+    @include desktop(){
+        bottom:-20%;
+    }
 }
 .w-90{
     width: 90%;

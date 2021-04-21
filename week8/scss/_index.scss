@@ -34,8 +34,11 @@ div#navbarNavDropdown{
      position: relative;
      &-inner h2{
         position: absolute;
-        top:40%;
+        top:15%;
         left:25%;
+        @include mobile(){
+            top:20%;
+        }
 }   
     }
 
@@ -81,4 +84,15 @@ a {
 }
 .search{
     background-color: $sec-color !important;
+}
+.index-btn {
+    width: 100%;
+    @include pad(){
+        width:24%;
+    }
+}
+
+
+.index-btn .dropdown-toggle::after {
+    display: none !important;
 }
